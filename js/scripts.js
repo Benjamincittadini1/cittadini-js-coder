@@ -253,7 +253,11 @@ class UI {
 	}
 }
 
-
+$(function(){
+	$('#boton-comprar').on('click', function(){
+		$('#modal-compra').modal();
+	})
+});
 
 class Storage {
 	static saveProduct(obj){
@@ -324,4 +328,3 @@ document.addEventListener("DOMContentLoaded", async () =>{
 		ui.cartLogic();
 	}
 })
-
